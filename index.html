@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SexyHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>SexyHub</header>
+
+  <!-- Filtros de categoria -->
+  <div class="filter-container">
+    <button class="filter-btn active" data-category="all">Todas</button>
+    <button class="filter-btn" data-category="magra">Magra</button>
+    <button class="filter-btn" data-category="loira">Loira</button>
+    <button class="filter-btn" data-category="morena">Morena</button>
+  </div>
+
+  <main>
+    <div class="model-card" data-category="magra loira">
+      <img class="model-photo" src="https://i.postimg.cc/ZqhhP8DG/4.jpg" alt="Marina Joyce" />
+      <div class="model-name">Marina Joyce</div>
+      <div class="model-desc">Conteúdo exclusivo e sensual.</div>
+      <div class="btn-group">
+        <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/5599999999999')">WhatsApp</button>
+        <button class="btn btn-telegram" onclick="window.open('https://t.me/username1')">Telegram</button>
+      </div>
+    </div>
+
+    <div class="model-card" data-category="magra morena">
+      <img class="model-photo" src="https://i.postimg.cc/c42WCy74/2.jpg" alt="Liza Koshy" />
+      <div class="model-name">Liza Koshy</div>
+      <div class="model-desc">Conteúdo exclusivo e sensual.</div>
+      <div class="btn-group">
+        <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/5599999999998')">WhatsApp</button>
+        <button class="btn btn-telegram" onclick="window.open('https://t.me/username2')">Telegram</button>
+      </div>
+    </div>
+
+    <div class="model-card" data-category="loira">
+      <img class="model-photo" src="https://i.postimg.cc/bwnh2CL0/1.webp" alt="Emma Chamberlain" />
+      <div class="model-name">Emma Chamberlain</div>
+      <div class="model-desc">Conteúdo exclusivo e sensual.</div>
+      <div class="btn-group">
+        <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/5599999999997')">WhatsApp</button>
+        <button class="btn btn-telegram" onclick="window.open('https://t.me/username3')">Telegram</button>
+      </div>
+    </div>
+
+    <div class="model-card" data-category="morena">
+      <img class="model-photo" src="https://i.postimg.cc/wT7H9TmG/1.jpg" alt="Nikkie de Jager" />
+      <div class="model-name">Nikkie de Jager</div>
+      <div class="model-desc">Conteúdo exclusivo e sensual.</div>
+      <div class="btn-group">
+        <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/5599999999996')">WhatsApp</button>
+        <button class="btn btn-telegram" onclick="window.open('https://t.me/username4')">Telegram</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2025 SexyHub - Todos os direitos reservados</footer>
+
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const modelCards = document.querySelectorAll('.model-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const category = btn.getAttribute('data-category');
+
+        modelCards.forEach(card => {
+          if (category === 'all') {
+            card.style.display = 'flex';
+          } else {
+            const categories = card.getAttribute('data-category').split(' ');
+            card.style.display = categories.includes(category) ? 'flex' : 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
