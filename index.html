@@ -4,10 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SexyHub</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>SexyHub</header>
+
+  <section class="intro">
+    <p>
+      Bem-vindo à SexyHub! Aqui você encontra conteúdo exclusivo e sensual das melhores modelos,
+      com atendimento via WhatsApp e Telegram para você ficar ainda mais próximo delas.
+    </p>
+  </section>
 
   <!-- Filtros de categoria -->
   <div class="filter-container">
@@ -23,8 +30,7 @@
       <div class="model-name">Marina Joyce</div>
       <div class="model-desc">Conteúdo exclusivo e sensual.</div>
       <div class="btn-group">
-        <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/5599999999999')">WhatsApp</button>
-        <button class="btn btn-telegram" onclick="window.open('https://t.me/username1')">Telegram</button>
+        <button class="btn btn-saibamais" onclick="window.open('modelos/marina.html')">Saiba Mais</button>
       </div>
     </div>
 
@@ -33,8 +39,7 @@
       <div class="model-name">Liza Koshy</div>
       <div class="model-desc">Conteúdo exclusivo e sensual.</div>
       <div class="btn-group">
-        <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/5599999999998')">WhatsApp</button>
-        <button class="btn btn-telegram" onclick="window.open('https://t.me/username2')">Telegram</button>
+        <button class="btn btn-saibamais" onclick="window.open('modelos/liza.html')">Saiba Mais</button>
       </div>
     </div>
 
@@ -43,8 +48,7 @@
       <div class="model-name">Emma Chamberlain</div>
       <div class="model-desc">Conteúdo exclusivo e sensual.</div>
       <div class="btn-group">
-        <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/5599999999997')">WhatsApp</button>
-        <button class="btn btn-telegram" onclick="window.open('https://t.me/username3')">Telegram</button>
+        <button class="btn btn-saibamais" onclick="window.open('modelos/emma.html')">Saiba Mais</button>
       </div>
     </div>
 
@@ -53,35 +57,34 @@
       <div class="model-name">Nikkie de Jager</div>
       <div class="model-desc">Conteúdo exclusivo e sensual.</div>
       <div class="btn-group">
-        <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/5599999999996')">WhatsApp</button>
-        <button class="btn btn-telegram" onclick="window.open('https://t.me/username4')">Telegram</button>
+        <button class="btn btn-saibamais" onclick="window.open('modelos/nikkie.html')">Saiba Mais</button>
       </div>
     </div>
   </main>
 
   <footer>© 2025 SexyHub - Todos os direitos reservados</footer>
 
-  <script>
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const modelCards = document.querySelectorAll('.model-card');
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const modelCards = document.querySelectorAll('.model-card');
 
-    filterButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
 
-        const category = btn.getAttribute('data-category');
+      const category = btn.getAttribute('data-category');
 
-        modelCards.forEach(card => {
-          if (category === 'all') {
-            card.style.display = 'flex';
-          } else {
-            const categories = card.getAttribute('data-category').split(' ');
-            card.style.display = categories.includes(category) ? 'flex' : 'none';
-          }
-        });
+      modelCards.forEach(card => {
+        if (category === 'all') {
+          card.style.display = 'flex';
+        } else {
+          const categories = card.getAttribute('data-category').split(' ');
+          card.style.display = categories.includes(category) ? 'flex' : 'none';
+        }
       });
     });
-  </script>
+  });
+</script>
 </body>
 </html>
