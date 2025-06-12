@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
   background: #000;
   color: #fff;
@@ -15,6 +16,42 @@ header {
   letter-spacing: 5px;
 }
 
+/* Introdução */
+.intro {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Filtros */
+.filter-container {
+  max-width: 1200px;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.filter-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  margin: 0 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #555;
+}
+
+/* Galeria */
 main {
   max-width: 1200px;
   margin: 2rem auto;
@@ -61,9 +98,11 @@ main {
   color: #ccc;
 }
 
+/* Botões */
 .btn-group {
   display: flex;
   gap: 1rem;
+  width: 100%;
 }
 
 .btn {
@@ -76,6 +115,17 @@ main {
   cursor: pointer;
   text-align: center;
   transition: all 0.3s;
+  background-color: #444;
+  color: #fff;
+  border-color: #444;
+  text-decoration: none;
+  display: inline-block;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: #666;
+  border-color: #666;
 }
 
 .btn-whatsapp {
@@ -87,6 +137,7 @@ main {
 .btn-whatsapp:hover {
   background-color: #1da851;
   border-color: #1da851;
+  color: #000;
 }
 
 .btn-telegram {
@@ -100,34 +151,22 @@ main {
   border-color: #006699;
 }
 
+.btn-saibamais {
+  background-color: #888;
+  border-color: #888;
+  color: #000;
+}
+
+.btn-saibamais:hover {
+  background-color: #aaa;
+  border-color: #aaa;
+  color: #000;
+}
+
+/* Rodapé */
 footer {
   text-align: center;
   color: #006699;
   font-size: 0.8rem;
   margin: 3rem 0 1rem;
-}
-
-/* Estilos do filtro */
-.filter-container {
-  max-width: 1200px;
-  margin: 1rem auto 0;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-.filter-btn {
-  background: #222;
-  color: #fff;
-  border: none;
-  margin: 0 0.5rem 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-  background-color: #555;
 }
