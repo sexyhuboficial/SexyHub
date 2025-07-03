@@ -1,0 +1,405 @@
+<?php
+header("Cache-Control: no-cache, no-store, must-revalidate");
+header("Pragma: no-cache");
+header("Expires: 0");
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SexyHub - Agência de Conteúdo Exclusivo</title>
+
+  <!-- Link para o seu CSS -->
+  <link rel="stylesheet" href="style.css?v=<?php echo filemtime('style.css'); ?>" />
+
+</head>
+
+<body>
+
+  <!-- =====================
+       Cabeçalho / Menu
+       ===================== -->
+  <header>
+  <nav class="menu" role="navigation" aria-label="Menu principal">
+    <div class="logo" aria-label="Logo SexyHub" tabindex="0">Sexy<span>Hub</span></div>
+
+    <button 
+      class="menu-toggle" 
+      aria-label="Abrir menu" 
+      aria-controls="nav-links" 
+      aria-expanded="false"
+      type="button"
+    >
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+
+    <ul id="nav-links" class="nav-links" role="menu">
+      <li role="none"><a role="menuitem" href="#inicio" tabindex="-1">Início</a></li>
+      <li role="none"><a role="menuitem" href="#conheca" tabindex="-1">Conheça a SexyHub!</a></li>
+      <li role="none"><a role="menuitem" href="#como-funciona" tabindex="-1">Como Funciona</a></li>
+      <li role="none"><a role="menuitem" href="#modelos" tabindex="-1">Modelos</a></li>
+      <li role="none"><a role="menuitem" href="#catalogo-modelos" tabindex="-1">Catálogo</a></li>
+      <li role="none"><a role="menuitem" href="#catalogo" tabindex="-1">Catálogo Sexyhub</a></li>
+      <li role="none"><a role="menuitem" href="#faq" tabindex="-1">FAQ</a></li>
+      <li role="none"><a role="menuitem" href="#contato" tabindex="-1">Contato</a></li>
+      <li role="none"><a role="menuitem" href="#prova-social" tabindex="-1">Prova Sociais</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- =====================
+       Hero Section
+       ===================== -->
+  <section id="inicio" class="hero">
+    <div class="hero-text">
+      <h1>Conheça o Melhor Conteúdo Exclusivo</h1>
+      <p>Conteúdo premium, fotos e vídeos exclusivos para você. Acesso fácil e seguro!</p>
+      <a href="#conheca" class="btn-primary">Conheça a SexyHub!</a>
+    </div>
+    <div class="hero-img" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Modelo posando com expressão confiante" />
+    </div>
+  </section>
+
+  <!-- =====================
+       Seção Conheça a SexyHub!
+       ===================== -->
+  <section id="conheca" class="section-conheca animated-section">
+  <h2>Conheça a SexyHub!</h2>
+  <p>Nossa agência conecta você diretamente a um atendimento personalizado, garantindo discrição total e segurança em cada etapa.</p>
+  <p>Os conteúdos são exclusivos, selecionados com qualidade e enviados de forma rápida, privada e sem intermediários. Aqui, o foco é você!</p>
+  <a href="#como-funciona" class="btn-primary">Como funciona a SexyHub</a>
+</section>
+
+ <!-- =====================
+       Seção Catálogo de Modelos
+       ===================== -->
+  <section id="catalogo-modelos" class="section-catalogo-modelos">
+    <div class="container">
+      <h2>Catálogo Completo de Modelos</h2>
+      <p>Veja todas as nossas modelos disponíveis, sua favorita e tenha acesso ao conteúdo exclusivo.</p>
+      <a href="https://catalogo.sexyhub.x10.mx/" class="btn-primary">Ver Catálogo da SexyHub</a>
+    </div>
+  </section>
+
+  <!-- =====================
+       Seção Como Funciona
+       ===================== -->
+  <section id="como-funciona" class="section-como-funciona">
+    <div class="container">
+      <h2>Como Funciona a SexyHub</h2>
+      <p>Você, cliente exclusivo, tem acesso a um catálogo seleto com as modelos mais desejadas da plataforma. Cada perfil é exclusivo e cuidadosamente verificado para garantir autenticidade e qualidade.</p>
+      <p>Após escolher a modelo que mais combina com seu gosto, você será direcionado ao nosso time de atendimento formado exclusivamente por mulheres. Elas garantem uma experiência segura, discreta e personalizada para finalizar sua compra.</p>
+      <a href="#faq" class="btn-primary">Dúvidas Frequentes</a>
+    </div>
+  </section>
+
+  <!-- =====================
+       Seção Modelos (Carrossel)
+       ===================== -->
+  <section id="modelos" class="section-modelos">
+    <h2>Nossas Modelos</h2>
+    <div class="carrossel">
+      <div class="carrossel-inner">
+        <div class="modelo-item">
+          <img src="https://i.postimg.cc/6pYyHd7H/modelo1.jpg" alt="Modelo 1">
+          <p>Modelo 1</p>
+        </div>
+        <div class="modelo-item">
+          <img src="https://i.postimg.cc/8PqqmnGH/modelo2.jpg" alt="Modelo 2">
+          <p>Modelo 2</p>
+        </div>
+        <!-- Adicione mais modelos aqui -->
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- =====================
+       Seção Catálogo
+       ===================== -->
+  <section id="catalogo" class="section-catalogo">
+    <h2>Catálogo Completo</h2>
+    <p>Confira nosso catálogo exclusivo e faça seu pedido com total segurança.</p>
+    <a href="https://catalogo.sexyhub.x10.mx/" target="_blank" class="btn-primary">Ver Catálogo da SexyHub</a>
+  </section>
+<!-- =====================
+     Seção Prova Social (Fotos)
+     ===================== -->
+<section id="prova-social" class="prova-social">
+  <div class="container">
+    <h2>O que nossos clientes dizem</h2>
+    <p class="subtitulo">Confira algumas fotos que eles nos enviaram com satisfação</p>
+
+    <div class="prova-social-grid">
+      <img src="https://i.postimg.cc/HnMSMjK6/Imagem-do-Whats-App-de-2025-07-03-s-00-28-57-44cba1b9.jpg" alt="Cliente 1" />
+      <img src="https://i.postimg.cc/g0w3jQ1D/Imagem-do-Whats-App-de-2025-07-03-s-00-28-57-490c4b04.jpg" alt="Cliente 2" />
+      <img src="https://i.pravatar.cc/150?img=7" alt="Cliente 3" />
+      <img src="https://i.pravatar.cc/150?img=8" alt="Cliente 4" />
+    </div>
+  </div>
+</section>
+
+    <!-- =====================
+       Seção FAQ
+       ===================== -->
+  <section id="faq" class="section-faq">
+    <h2>Dúvidas Frequentes</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Como funciona a entrega do conteúdo?</span>
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Todo o conteúdo é entregue diretamente via WhatsApp, com total segurança e discrição.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>O conteúdo é realmente exclusivo?</span>
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Sim! Nossos materiais são produzidos exclusivamente para os clientes da SexyHub.</p>
+      </div>
+    </div>
+
+  <div class="faq-item">
+  <button class="faq-question">
+    <span>Tem algum custo extra além do valor do pack?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Não. O valor combinado é o valor final. Sem taxas ocultas.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Posso comprar de mais de uma modelo ao mesmo tempo?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Pode sim! Nossa equipe pode montar um pacote personalizado com várias modelos.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>As modelos fazem conteúdo com rosto?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Algumas modelos sim, outras preferem preservar a identidade. Nossa equipe sempre informa isso antes da compra.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Tem limite de idade para comprar?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Sim. Apenas maiores de 18 anos podem comprar conteúdos na SexyHub.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Os conteúdos são enviados por onde?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Enviamos diretamente pelo WhatsApp ou por link privado, conforme preferência do cliente.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Vocês enviam conteúdo fora do Brasil?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Sim! Atendemos clientes de qualquer lugar do mundo, desde que a comunicação possa ser feita por WhatsApp ou Telegram.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>As modelos fazem videochamada?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Algumas fazem! Basta consultar nossa equipe de atendimento para saber as opções disponíveis.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Posso fazer um pedido especial (tema, roupa, posição)?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Sim! A maioria das modelos aceita pedidos personalizados. Informe todos os detalhes no atendimento.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Depois que eu compro, o conteúdo fica disponível pra sempre?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Sim. Uma vez enviado, o conteúdo é seu. Mas lembre-se: é proibido compartilhar.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Posso parcelar o pagamento?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Atualmente só trabalhamos com pagamento à vista (Pix ou transferência). Mas temos valores acessíveis e promoções.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Vocês têm grupo no Telegram?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Sim! Pergunte à nossa equipe como participar e ter acesso a novidades exclusivas.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>O site é seguro?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Totalmente. Não pedimos dados sensíveis e o contato é direto com nossa equipe de atendimento.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Vocês guardam meu número de telefone?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Não. Seu número só é usado para a comunicação direta durante o atendimento. Não enviamos spam nem mensagens depois sem autorização.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Quanto tempo demora para responderem no WhatsApp?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Nosso atendimento é quase imediato! Normalmente respondemos em poucos minutos, mesmo à noite.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Tenho que baixar algum aplicativo?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Não precisa! Todo o processo acontece direto pelo WhatsApp ou Telegram.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Vocês fazem sorteios ou promoções?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Sim! Fique atento às campanhas especiais. Quem é cliente sempre tem vantagens.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>É possível agendar um conteúdo para outro dia?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Sim! Podemos combinar uma data de entrega futura, conforme sua preferência.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Vocês têm conteúdo de casal?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Algumas modelos oferecem esse tipo de conteúdo. Consulte nossa equipe para saber quais.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Posso enviar referências ou inspirações para a modelo?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Sim! Você pode mandar fotos, ideias ou exemplos do tipo de conteúdo que deseja.
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">
+    <span>Posso fazer um pedido anônimo, sem falar meu nome?</span>
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Claro! Só precisamos de um meio de contato ativo (WhatsApp ou Telegram). O resto é totalmente anônimo.
+  </div>
+</div>
+  </section>
+
+
+  <!-- =====================
+       Seção Contato
+       ===================== -->
+  <section id="contato" class="section-contato">
+    <h2>Entre em Contato</h2>
+    <p>Quer saber mais ou fazer um pedido personalizado? Fale conosco pelo WhatsApp.</p>
+    <a href="https://wa.me/5511999999999" target="_blank" class="btn-primary">WhatsApp</a>
+  </section>
+
+  <!-- =====================
+       Footer
+       ===================== -->
+  <footer>
+    <p>&copy; 2025 SexyHub. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- =====================
+       Botão Flutuante WhatsApp
+       ===================== -->
+  <a href="https://wa.me/5511999999999" class="btn-whatsapp" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 28px;">
+  </a>
+
+  <!-- =====================
+       Scripts JS
+       ===================== -->
+  <script src="script.js?v=<?php echo filemtime('script.js'); ?>"></script>
+
+</body>
+</html>
